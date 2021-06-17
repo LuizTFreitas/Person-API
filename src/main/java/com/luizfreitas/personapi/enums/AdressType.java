@@ -7,8 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum AdressType {
 
-    COMERCIAL("Comercial"),
-    RESIDENCIAL("Residencial");
+    COMMERCIAL("Commercial"),
+    HOME("Home");
 
     private String description;
 

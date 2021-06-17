@@ -18,6 +18,7 @@ import javax.validation.constraints.Size;
 public class AdressDTO {
 
     private long id;
+
     @NotEmpty
     private String street;
 
