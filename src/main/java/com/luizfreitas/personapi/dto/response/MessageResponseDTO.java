@@ -1,4 +1,4 @@
-package com.luizfreitas.personapi.dto;
+package com.luizfreitas.personapi.dto.response;
 
 import lombok.Builder;
 import lombok.Data;

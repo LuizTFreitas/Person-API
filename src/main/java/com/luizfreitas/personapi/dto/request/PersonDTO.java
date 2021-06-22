@@ -1,7 +1,7 @@
-package com.luizfreitas.personapi.dto;
+package com.luizfreitas.personapi.dto.request;
 
-import com.luizfreitas.personapi.entity.Adress;
-import com.luizfreitas.personapi.entity.Phone;
+import com.luizfreitas.personapi.entities.Adress;
+import com.luizfreitas.personapi.entities.Phone;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

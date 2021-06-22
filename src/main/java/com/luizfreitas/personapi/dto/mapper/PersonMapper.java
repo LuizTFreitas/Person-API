@@ -1,7 +1,7 @@
-package com.luizfreitas.personapi.mapper;
+package com.luizfreitas.personapi.dto.mapper;
 
-import com.luizfreitas.personapi.dto.PersonDTO;
-import com.luizfreitas.personapi.entity.Person;
+import com.luizfreitas.personapi.dto.request.PersonDTO;
+import com.luizfreitas.personapi.entities.Person;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

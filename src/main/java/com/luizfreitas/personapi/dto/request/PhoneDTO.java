@@ -1,6 +1,6 @@
-package com.luizfreitas.personapi.dto;
+package com.luizfreitas.personapi.dto.request;
 
-import com.luizfreitas.personapi.enums.AdressType;
+import com.luizfreitas.personapi.enums.PhoneType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,25 +15,14 @@ import javax.validation.constraints.Size;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AdressDTO {
+public class PhoneDTO {
 
     private long id;
 
-    @NotEmpty
-    private String street;
-
-    @NotEmpty
-    @Size(min = 1, max = 4)
-    private String number;
-
     @Enumerated(EnumType.STRING)
-    private AdressType type;
+    private PhoneType type;
 
     @NotEmpty
-    @Size(min = 2, max = 2)
-    private String state;
-
-    @NotEmpty
-    @Size(min = 8, max = 8)
-    private String cep;
+    @Size(min = 13, max = 14)
+    private String number;
 }

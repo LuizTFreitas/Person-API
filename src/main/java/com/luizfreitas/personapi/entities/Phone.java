@@ -1,4 +1,4 @@
-package com.luizfreitas.personapi.entity;
+package com.luizfreitas.personapi.entities;
 
 import com.luizfreitas.personapi.enums.PhoneType;
 import lombok.AllArgsConstructor;

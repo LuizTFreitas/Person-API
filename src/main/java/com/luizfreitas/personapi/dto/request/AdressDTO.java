@@ -1,4 +1,4 @@
-package com.luizfreitas.personapi.entity;
+package com.luizfreitas.personapi.dto.request;
 
 import com.luizfreitas.personapi.enums.AdressType;
 import lombok.AllArgsConstructor;
@@ -6,35 +6,34 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
-@Entity
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Adress {
+public class AdressDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false)
+    @NotEmpty
     private String street;
 
-    @Column(nullable = false)
+    @NotEmpty
+    @Size(min = 1, max = 4)
     private String number;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private AdressType type;
 
-    @Column(nullable = false)
+    @NotEmpty
+    @Size(min = 2, max = 2)
     private String state;
 
-    @Column(nullable = false)
+    @NotEmpty
+    @Size(min = 8, max = 8)
     private String cep;
-
-
-
 }
