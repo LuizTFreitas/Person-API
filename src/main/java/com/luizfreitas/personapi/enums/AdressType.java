@@ -10,6 +10,6 @@ public enum AdressType {
     COMMERCIAL("Commercial"),
     HOME("Home");
 
-    private String description;
+    private final String description;
 
 }

@@ -1,4 +1,5 @@
 package com.luizfreitas.personapi.enums;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
